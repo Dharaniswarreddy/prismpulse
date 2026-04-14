@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm install",
+  "framework": "express",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

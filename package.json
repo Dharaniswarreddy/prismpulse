@@ -2,12 +2,13 @@
   "name": "prismpulse-agency-site",
   "version": "1.0.0",
   "private": true,
-  "description": "3D digital marketing agency site with SQLite-backed lead form",
+  "type": "module",
+  "description": "3D digital marketing agency site with MySQL-backed lead form",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "echo 'No build required for Express server'"
+    "build": "npm install"
   },
   "dependencies": {
     "@prisma/client": "latest",
