@@ -1,12 +1,14 @@
+require('dotenv').config();
 const mysql = require("mysql2/promise");
 
 async function setupDatabase() {
   try {
+    console.log("\n🔧 Setting up MySQL database...");
     const conn = await mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "Eshwar1@",
-      database: "prismpulse",
+      host: process.env.DB_HOST || "localhost",
+      user: process.env.DB_USER || "root",
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME || "prismpulse",
     });
 
     // Create leads table
@@ -21,11 +23,12 @@ async function setupDatabase() {
     `);
 
     console.log("✓ MySQL table 'leads' created successfully");
+    console.log("✅ Database setup complete!\n");
 
     await conn.end();
     process.exit(0);
   } catch (error) {
-    console.error("Setup error:", error);
+    console.error("❌ Setup error:", error.message);
     process.exit(1);
   }
 }
