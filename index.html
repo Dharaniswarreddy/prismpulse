@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrismPulse | 3D Digital Marketing Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home">
+        <span class="brand-dot"></span>
+        PrismPulse
+      </a>
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="cta-pill" href="#contact">Start Project</a>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="eyebrow">3D-FIRST GROWTH STUDIO</p>
+        <h1>
+          We build campaigns that feel
+          <span>alive in motion.</span>
+        </h1>
+        <p class="hero-copy">
+          We combine immersive 3D storytelling, paid media strategy, and performance
+          analytics to turn attention into revenue.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book a Growth Call</a>
+          <a class="btn btn-secondary" href="#work">See Case Studies</a>
+        </div>
+        <div class="hero-metrics">
+          <article>
+            <h3>4.8x</h3>
+            <p>Average ROAS in 90 days</p>
+          </article>
+          <article>
+            <h3>270M+</h3>
+            <p>Ad impressions delivered</p>
+          </article>
+          <article>
+            <h3>92%</h3>
+            <p>Client retention rate</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-head">
+          <p class="eyebrow">SERVICES</p>
+          <h2>Marketing systems built for scale</h2>
+        </div>
+        <div class="grid cards-3">
+          <article class="card tilt-card">
+            <h3>3D Creative Production</h3>
+            <p>
+              Product renders, interactive ad scenes, and cinematic brand assets crafted
+              to stop the scroll instantly.
+            </p>
+          </article>
+          <article class="card tilt-card">
+            <h3>Performance Marketing</h3>
+            <p>
+              Full-funnel paid search and social campaigns with experimentation loops
+              tied directly to revenue KPIs.
+            </p>
+          </article>
+          <article class="card tilt-card">
+            <h3>Conversion Systems</h3>
+            <p>
+              Landing pages, CRO testing, and lifecycle automation that turn campaign
+              traffic into pipeline and recurring sales.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-head">
+          <p class="eyebrow">SELECTED RESULTS</p>
+          <h2>Recent growth stories</h2>
+        </div>
+        <div class="grid cards-2">
+          <article class="case">
+            <p class="tag">DTC | Beauty</p>
+            <h3>+312% Paid Revenue in 5 Months</h3>
+            <p>
+              We rebuilt creative with 3D product moments and introduced a high-intent
+              remarketing sequence across Meta and YouTube.
+            </p>
+          </article>
+          <article class="case">
+            <p class="tag">SaaS | B2B</p>
+            <h3>-38% CAC with Funnel Redesign</h3>
+            <p>
+              We aligned search intent clusters to a new conversion-focused content and
+              landing page architecture.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="section-head">
+          <p class="eyebrow">PROCESS</p>
+          <h2>From strategy to scaled growth in 3 phases</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Audience, market, and channel deep-dive to find your highest ROI path.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Design</h3>
+            <p>3D creative concepts and funnel systems mapped to measurable targets.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Deploy</h3>
+            <p>Weekly optimization cycles with transparent reporting and rapid testing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">LET'S BUILD</p>
+          <h2>Ready to launch your next growth engine?</h2>
+          <p>
+            Tell us your goals and we’ll send a custom plan with channel strategy,
+            creative direction, and expected milestones.
+          </p>
+        </div>
+        <form class="contact-form" id="lead-form">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            Project Goals
+            <textarea
+              name="goals"
+              rows="4"
+              placeholder="What are you trying to grow?"
+              required
+            ></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Brief</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 PrismPulse Agency</p>
+      <p>3D Creative • Paid Media • CRO</p>
+    </footer>
+
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
