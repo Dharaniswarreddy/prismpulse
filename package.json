@@ -2,7 +2,6 @@
   "name": "prismpulse-agency-site",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "description": "3D digital marketing agency site with MySQL-backed lead form",
   "main": "server.js",
   "scripts": {
