@@ -11,7 +11,6 @@ async function setupDatabase() {
       user: process.env.DB_USER || "root",
       password: process.env.DB_PASSWORD,
       port: parseInt(process.env.DB_PORT) || 3306,
-      ssl: {},
     });
 
     // Create database if it doesn't exist
@@ -26,7 +25,6 @@ async function setupDatabase() {
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME || "prismpulse",
       port: parseInt(process.env.DB_PORT) || 3306,
-      ssl: {},
     });
 
     // Create leads table

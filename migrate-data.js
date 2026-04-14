@@ -38,7 +38,6 @@ async function migrateData() {
       password: process.env.DB_PASSWORD,
       database: process.env.DB_NAME || "prismpulse",
       port: parseInt(process.env.DB_PORT) || 3306,
-      ssl: {},
       waitForConnections: true,
       connectionLimit: 5,
       queueLimit: 0,
